@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+   
+</head>
+
+<body>
+    <form id="cvss-form">
+        <label for="gravidade">Gravidade:</label>
+        <select id="gravidade">
+          <option value=0.0>Nenhuma</option>
+          <option value=3.9>Baixa</option>
+          <option value=7.0>Média</option>
+          <option value=10.0>Alta</option>
+        </select>
+      
+        <label for="explorabilidade">Explorabilidade:</label>
+        <select id="explorabilidade">
+          <option value=0.0>Nenhum</option>
+          <option value=3.9>Pouco provável</option>
+          <option value=5.9>Razoavelmente provável</option>
+          <option value=8.9>Muito provável</option>
+          <option value=10.0>Certeza</option>
+        </select>
+      
+        <label for="impacto">Impacto:</label>
+        <select id="impacto">
+          <option value=0.0>Nenhum</option>
+          <option value=0.3>Baixo</option>
+          <option value=0.7>Médio</option>
+          <option value=1.0>Alto</option>
+        </select>
+      
+        <button id="calcular" type="submit">Calcular</button>
+      </form>
+      
+      
+      <p id="cvss-score"></p>
+      <script src="index.js"></script>
+      
+</body>
+</html>
+
+
